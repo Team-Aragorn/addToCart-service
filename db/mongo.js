@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/fetcher');
+mongoose.connect('mongodb://localhost/games', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.once('open', () => {
   console.log(`Connected to MongoDB ${db.host}:${db.port}`);
 });
 
-let schema = mongoose.Schema({
+const schema = new mongoose.Schema({
+  gameId: Number,
   title: String,
   reviewScore: Number,
   ageRating: String,
@@ -15,6 +16,10 @@ let schema = mongoose.Schema({
   digitalPrice: Number,
   storeLocation: String,
   inStock: Boolean,
-})
+});
+
+var Games = mongoose.model('Games', schema)
 
 db.on('error', console.error.bind(console, 'connection error:'));
+
+module.exports.db = db;
