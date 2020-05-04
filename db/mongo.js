@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/games', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/games', { useNewUrlParser: true, useUnifiedTopology: true });
+
 const db = mongoose.connection;
+
 db.once('open', () => {
   console.log(`Connected to MongoDB ${db.host}:${db.port}`);
 });
+
+db.on('error', console.error.bind(console, 'connection error:'));
 
 const schema = new mongoose.Schema({
   gameId: Number,
@@ -18,8 +22,47 @@ const schema = new mongoose.Schema({
   inStock: Boolean,
 });
 
-var Games = mongoose.model('Games', schema)
+const Game = mongoose.model('Game', schema)
 
-db.on('error', console.error.bind(console, 'connection error:'));
+const save = (game) => {
+  const newGame = new Game({
+    gameId: game.id,
+    title: game.title,
+    reviewScore: game.reviewScore,
+    ageRating: game.ageRating,
+    newPrice: game.newPrice,
+    usedPrice: game.usedPrice,
+    digitalPrice: game.digitalPrice,
+    storeLocation: game.storeLocation,
+    inStock: game.inStock,
+  });
 
-module.exports.db = db;
+  newGame.save((err) => {
+    if (err) {
+      return console.log(err);
+    }
+  });
+};
+
+const getGame = (id, cb) => {
+  Game.find({ id }, (err, game) => {
+    if (err) {
+      return cb(err, null);
+    }
+    return cb(null, game);
+  });
+};
+
+const deleteAll = () => {
+  Game.deleteMany({}, (err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+};
+
+module.exports = {
+  save,
+  getGame,
+  deleteAll,
+};
