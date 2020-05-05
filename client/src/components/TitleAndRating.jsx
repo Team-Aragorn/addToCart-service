@@ -12,13 +12,13 @@ class TitleAndRating extends React.Component {
     return (
       <div className="titleANDrating">
         <div className="gameTitle">
-          TITLEGOESHERE
+          {this.props.game[0].title}
         </div>
-        <div className="gameRating">
-          GameRating
+        <div className="ageRating">
+          {this.props.game[0].ageRating}
         </div>
         <div className="gamePublisher">
-          PublisherName
+          PublisherNameGoesHere
         </div>
       </div>
     )

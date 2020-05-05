@@ -11,7 +11,7 @@ class StoreChecker extends React.Component {
   render() {
     return (
       <div className="storeChecker">
-        STORE CHECKER TEXT GOES HERE!!
+        New at {this.props.game[0].storeLocation} (Check Other Stores)
       </div>
     )
   }

@@ -40,7 +40,7 @@ class App extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         this.setState({
-          game: [data],
+          game: data,
           loading: false,
         });
       })
@@ -55,14 +55,14 @@ class App extends React.Component {
     }
     return (
       <>
-        <TitleAndRating />
-        <GameReview />
-        <GamePrices />
+        <TitleAndRating game={this.state.game} />
+        <GameReview game={this.state.game} />
+        <GamePrices game={this.state.game} />
         <PickUp />
-        <StoreChecker />
+        <StoreChecker game={this.state.game} />
         <ProtectionPlan />
         <AddToCart />
-        <InStockAndShippingTime />
+        <InStockAndShippingTime game={this.state.game} />
         <WishlistAndTradeIn />
       </>
     )

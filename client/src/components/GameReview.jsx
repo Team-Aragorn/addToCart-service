@@ -11,8 +11,8 @@ class GameReview extends React.Component {
   render() {
     return (
       <div className="gameReview">
-        <div className="reviewStars">*****</div>
-        <div className="reviewScore">#.# (####)</div>
+        <div className="reviewStars">***** (PLACEHOLDER STARS)</div>
+        <div className="reviewScore">{this.props.game[0].reviewScore}.0 (####)</div>
         <div className="writeReview">Write a review</div>
       </div>
     )

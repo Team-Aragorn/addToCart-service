@@ -12,7 +12,8 @@ class PickUp extends React.Component {
     return (
       <div className="pickUp">
         <div className="pickUpInfo">
-          PICKUP TEXT GOES HERE!!
+          <div>FREE PICK UP AT STORE WITH DELIVERY@DOOR</div>
+          <div>Order by 6pm local time to pick up TODAY!</div>
         </div>
       </div>
     )

@@ -12,10 +12,10 @@ class InStockAndShippingTime extends React.Component {
     return (
       <>
         <div className="inStock">
-          STOCK TEXT HERE
+          {this.props.game[0].inStock}
         </div>
         <div className="shippingTime">
-          SHIPPING TIME HERE
+         Usually ships within 24hrs. (placeholder)
         </div>
       </>
     )

@@ -19,6 +19,7 @@ app.get('/game/:id', (req, res) => {
       res.sendStatus(500).send(err);
       res.end();
     } else {
+      // causes crash? L22:24
       res.send(result).json();
       res.end();
     }
