@@ -55,7 +55,6 @@ const getGame = (id, cb) => {
     if (err) {
       return cb(err, null);
     }
-    // causes crash? L54:12
     return cb(null, game);
   });
 };
