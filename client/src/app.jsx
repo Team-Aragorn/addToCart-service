@@ -1,6 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import TitleAndRating from './components/TitleAndRating.jsx';
+import GameReview from './components/GameReview.jsx';
+import GamePrices from './components/GamePrices.jsx';
+import PickUp from './components/PickUp.jsx';
+import StoreChecker from './components/StoreChecker.jsx';
+import ProtectionPlan from './components/ProtectionPlan.jsx';
+import AddToCart from './components/AddToCart.jsx';
+import InStockAndShippingTime from './components/InStockAndShippingTime.jsx';
+import WishlistAndTradeValue from './components/WishlistAndTradeIn.jsx';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -16,56 +26,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="titleANDrating">
-          <div className="gameTitle">
-            TITLEGOESHERE
-          </div>
-          <div className="gameRating">
-            GameRating
-          </div>
-          <div className="gamePublisher">
-            PublisherName
-          </div>
-        </div>
-        <div className="gameReview">
-          <div className="reviewStars">*****</div>
-          <div className="reviewScore">#.# (####)</div>
-          <div className="writeReview">Write a review</div>
-        </div>
-        <div className="gamePrices">
-          <div className="newPrice">NEW $##.##</div>
-          <div className="usedPrice">PRE-OWNED $##.##</div>
-          <div className="digitalPrice">DIGITAL $##.##</div>
-        </div>
-        <div className="pickUp">
-          <div className="pickUpInfo">
-            PICKUP TEXT GOES HERE!!
-          </div>
-        </div>
-        <div className="storeChecker">
-          STORE CHECKER TEXT GOES HERE!!
-        </div>
-        <div className="protectionPlan">
-          <div className="protectionDropdown"></div>
-          <div className="planDetails">Plan Details</div>
-        </div>
-        <div className="addToCart">
-          <button>ADD TO CART</button>
-        </div>
-        <div className="inStock">
-          STOCK TEXT HERE
-        </div>
-        <div className="shippingTime">
-          SHIPPING TIME HERE
-        </div>
-        <div className="footer">
-          <div className="addToWishlist">
-            ADD TO WISHLIST
-          </div>
-          <div className="seeTradeValue">
-            SEE TRADE VALUE
-          </div>
-        </div>
+        <TitleAndRating/>
+        <GameReview/>
+        <GamePrices/>
+        <PickUp/>
+        <StoreChecker/>
+        <ProtectionPlan/>
+        <AddToCart/>
+        <InStockAndShippingTime/>
+        <WishlistAndTradeValue/>
       </>
     )
   }
