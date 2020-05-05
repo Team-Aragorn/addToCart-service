@@ -9,7 +9,7 @@ const PORT = 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/game/:id', express.static(__dirname + '/../client/dist'));
+app.use('/games/:id', express.static(__dirname + '/../client/dist'));
 
 //TO-DO: api get router
 app.get('/game/:id', (req, res) => {

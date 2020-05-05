@@ -24,7 +24,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const gid = window.location.pathname.match(/\/game\/(\d+)\//);
+    const gid = window.location.pathname.match(/\/games\/(\d+)\//);
     console.log("GID", gid)
     this.setState({
       gameid: gid[1],
@@ -41,6 +41,7 @@ class App extends React.Component {
       .then((data) => {
         this.setState({
           game: [data],
+          loading: false,
         });
       })
       .catch((err) => {
