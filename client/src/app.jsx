@@ -9,7 +9,7 @@ import StoreChecker from './components/StoreChecker.jsx';
 import ProtectionPlan from './components/ProtectionPlan.jsx';
 import AddToCart from './components/AddToCart.jsx';
 import InStockAndShippingTime from './components/InStockAndShippingTime.jsx';
-import WishlistAndTradeValue from './components/WishlistAndTradeIn.jsx';
+import WishlistAndTradeIn from './components/WishlistAndTradeIn.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class App extends React.Component {
         <ProtectionPlan/>
         <AddToCart/>
         <InStockAndShippingTime/>
-        <WishlistAndTradeValue/>
+        <WishlistAndTradeIn/>
       </>
     )
   }

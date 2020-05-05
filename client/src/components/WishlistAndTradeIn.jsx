@@ -1,6 +1,6 @@
 import React from 'react';
 
-class wishlistAndTradeValue extends React.Component {
+class WishlistAndTradeIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,4 +22,4 @@ class wishlistAndTradeValue extends React.Component {
   }
 }
 
-export default wishlistAndTradeValue;
+export default WishlistAndTradeIn;
