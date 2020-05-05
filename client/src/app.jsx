@@ -26,15 +26,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <TitleAndRating/>
-        <GameReview/>
-        <GamePrices/>
-        <PickUp/>
-        <StoreChecker/>
-        <ProtectionPlan/>
-        <AddToCart/>
-        <InStockAndShippingTime/>
-        <WishlistAndTradeIn/>
+        <TitleAndRating />
+        <GameReview />
+        <GamePrices />
+        <PickUp />
+        <StoreChecker />
+        <ProtectionPlan />
+        <AddToCart />
+        <InStockAndShippingTime />
+        <WishlistAndTradeIn />
       </>
     )
   }
