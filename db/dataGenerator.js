@@ -3,10 +3,11 @@ const faker = require('faker');
 const data = [];
 
 const fillData = () => {
-  for (var i = 0; i <= 100; i++) {
+  for (var i = 1; i <= 100; i++) {
     const gameObj = {
+      id: i,
       gameId: i,
-      title: faker.fake('{{company.catchPhraseAdjective}} {{commerce.productAdjective}} {{company.bsNoun}}'),
+      title: faker.fake('{{company.catchPhraseAdjective}} {{company.bsNoun}}'),
       reviewScore: Math.ceil(Math.random() * 5),
       ageRating: Math.ceil(Math.random() * 6), //E, E10+, T, M, A, RP
       newPrice: 60,
@@ -19,8 +20,6 @@ const fillData = () => {
   }
 };
 
-
 fillData();
-
 
 module.exports = data;

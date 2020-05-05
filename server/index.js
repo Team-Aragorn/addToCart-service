@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-// const db;
+const db = require('../db/index.js');
 
 const app = express();
 const PORT = 3001;
@@ -24,6 +24,7 @@ app.get('/api/game/:id', (req, res) => {
     }
   })
 })
+
 
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
