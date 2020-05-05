@@ -18,7 +18,7 @@ class TitleAndRating extends React.Component {
           {this.props.game[0].ageRating}
         </div>
         <div className="gamePublisher">
-          PublisherNameGoesHere
+          {this.props.game[0].publisher}
         </div>
       </div>
     )
