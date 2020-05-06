@@ -78,6 +78,15 @@
   width: 200px;
   text-align: center;
   padding-top: 3.5vh;
+  border: solid lightgray 2px;
+  background-color:whitesmoke;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.new {
+  font-weight: 600;
+  font-size: .9rem;
 }
 
 .usedPrice {
@@ -85,7 +94,16 @@
   width: 200px;
   text-align: center;
   padding-top: 3.5vh;
+  border: solid lightgray 2px;
+  background-color:whitesmoke;
+  font-weight: 600;
+  font-size: 1.1rem;
 
+}
+
+.used {
+  font-weight: 600;
+  font-size: .9rem;
 }
 
 .digitalPrice {
@@ -93,7 +111,16 @@
   width: 200px;
   text-align: center;
   padding-top: 3.5vh;
+  border: solid lightgray 2px;
+  background-color:whitesmoke;
+  font-weight: 600;
+  font-size: 1.1rem;
 
+}
+
+.digital {
+  font-weight: 600;
+  font-size: .9rem;
 }
 
 .pickUp {
@@ -172,23 +199,17 @@
 
 }
 
-.in-stock {
-color: green;
-}
-
-.out-stock {
-color: red;
-}
-
 .shippingTime {
   /* border:solid green 2px; */
   padding: 5px;
+  padding-left: 4%;
+  font-size: .9rem;
 
 }
 
 .wishlistAndTradeValue {
   /* border:solid yellow 2px; */
-  display: flex;
+  display: flow-root;
   flex-direction: row;
   padding: 5px;
 
@@ -196,11 +217,17 @@ color: red;
 
 .addToWishlist {
   /* border:solid rgb(255, 117, 83) 2px; */
-
+  float:left;
+  font-weight:600;
+  font-size: .85rem;
 }
 
 .seeTradeValue {
   /* border:solid goldenrod 2px; */
+  float: right;
+  font-weight:600;
+  font-size: .85rem;
+
 
 }
 

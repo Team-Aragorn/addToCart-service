@@ -24,9 +24,9 @@ class InStockAndShippingTime extends React.Component {
         <div className="inStock" style={ { color: this.state.inStock ? 'green' : 'red' } }>
           {this.state.inStock ? 'IN STOCK' : 'OUT OF STOCK'}
         </div>
-        <div className="shippingTime">
-         Usually ships within 24hrs.
-        </div>
+        <ul className="shippingTime">
+         <li>Usually ships within 24hrs.</li>
+        </ul>
       </>
     )
   }
