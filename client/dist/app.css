@@ -172,6 +172,14 @@
 
 }
 
+.in-stock {
+color: green;
+}
+
+.out-stock {
+color: red;
+}
+
 .shippingTime {
   /* border:solid green 2px; */
   padding: 5px;
