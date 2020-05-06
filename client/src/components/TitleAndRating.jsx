@@ -10,17 +10,19 @@ class TitleAndRating extends React.Component {
 
   render() {
     return (
-      <div className="titleANDrating">
-        <div className="gameTitle">
-          {this.props.game[0].title}
-        </div>
-        <div className="ageRating">
-          {this.props.game[0].ageRating}
+      <>
+        <div className="titleANDrating">
+          <div className="gameTitle">
+            {this.props.game[0].title}
+          </div>
+          <div className="ageRating">
+            {this.props.game[0].ageRating}
+          </div>
         </div>
         <div className="gamePublisher">
           {this.props.game[0].publisher}
         </div>
-      </div>
+      </>
     )
   }
 }
