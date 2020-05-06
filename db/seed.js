@@ -1,4 +1,4 @@
-const db = require('./mongo.js');
+const db = require('./index.js');
 const data = require('./dataGenerator.js');
 
 

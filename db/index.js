@@ -11,9 +11,12 @@ db.once('open', () => {
 db.on('error', console.error.bind(console, 'connection error:'));
 
 const schema = new mongoose.Schema({
+  id: Number,
   gameId: Number,
   title: String,
+  publisher: String,
   reviewScore: Number,
+  reviewCount: Number,
   ageRating: String,
   newPrice: Number,
   usedPrice: Number,
@@ -26,9 +29,12 @@ const Game = mongoose.model('Game', schema)
 
 const save = (game) => {
   const newGame = new Game({
-    gameId: game.id,
+    id: game.id,
+    gameId: game.gameId,
     title: game.title,
+    publisher: game.publisher,
     reviewScore: game.reviewScore,
+    reviewCount: game.reviewCount,
     ageRating: game.ageRating,
     newPrice: game.newPrice,
     usedPrice: game.usedPrice,
