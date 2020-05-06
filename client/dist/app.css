@@ -3,6 +3,7 @@
   max-width: 600px;
   max-height: 800px;
   height: 700px;
+  font-family: sans-serif;
 
 }
 
@@ -15,7 +16,6 @@
 .gameTitle {
   font-size: 2rem;
   font-weight: 1000;
-  font-family: sans-serif;
   /* border:solid lightblue 2px; */
   float:left;
   padding: 5px;
@@ -40,24 +40,28 @@
   display: flex;
   flex-direction: row;
   padding: 5px;
+  padding-left: 10px;
 
 }
 
 .reviewStars {
   /* border:solid lightgreen 2px; */
   padding: 5px;
+  padding-left: 10px;
 
 }
 
 .reviewScore {
   /* border:solid darkgreen 2px; */
   padding: 5px;
+  padding-left: 10px;
 
 }
 
 .writeReview {
   /* border:solid yellowgreen 2px; */
   padding: 5px;
+  padding-left: 10px;
 
 }
 
@@ -66,18 +70,21 @@
   display: flex;
   flex-direction: row;
   width: 600px;
+  height: 100px;
 }
 
 .newPrice {
   /* border:solid rgb(151, 31, 31) 2px; */
   width: 200px;
   text-align: center;
+  padding-top: 3.5vh;
 }
 
 .usedPrice {
   /* border:solid rgb(138, 0, 0) 2px; */
   width: 200px;
   text-align: center;
+  padding-top: 3.5vh;
 
 }
 
@@ -85,6 +92,7 @@
   /* border:solid rgb(255, 117, 83) 2px; */
   width: 200px;
   text-align: center;
+  padding-top: 3.5vh;
 
 }
 
@@ -94,20 +102,44 @@
 
 }
 
+.pickup1 {
+  color: rgb(38, 151, 113);
+  font-weight:600;
+}
+
+.pickup2 {
+  font-weight:600;
+
+}
+
 .pickUpInfo {
   /* border:solid pink 2px; */
+  padding-left: 30px;
+  font-size: .9rem;
 
 }
 
 .storeChecker {
   /* border:solid orange 2px; */
-  padding: 5px;
+  font-size: .9rem;
+  padding-left: 35px;
+}
 
+.freeship {
+  font-weight: 600;
+  font-size: .9rem;
+  padding-top: 10px;
+  padding-left: 35px;
+
+}
+
+.store-new {
+  font-weight:600;
 }
 
 .protectionPlan {
   /* border:solid burlywood 2px; */
-  display: flex;
+  display: flow-root;
   flex-direction: row;
   padding: 5px;
 
@@ -115,12 +147,12 @@
 
 .protectionDropdown {
   /* border:solid brown 2px; */
-
+  float:left;
 }
 
 .planDetails {
   /* border:solid gray 2px; */
-
+  float:right;
 }
 
 .addToCart {

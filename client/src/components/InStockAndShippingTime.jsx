@@ -32,7 +32,7 @@ class InStockAndShippingTime extends React.Component {
           {this.state.inStock ? 'IN STOCK' : 'OUT OF STOCK'}
         </div>
         <div className="shippingTime">
-         Usually ships within 24hrs. (placeholder)
+         Usually ships within 24hrs.
         </div>
       </>
     )

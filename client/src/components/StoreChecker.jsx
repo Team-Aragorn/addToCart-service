@@ -10,9 +10,14 @@ class StoreChecker extends React.Component {
 
   render() {
     return (
-      <div className="storeChecker">
-        New at {this.props.game[0].storeLocation} (Check Other Stores)
-      </div>
+      <>
+        <div className="storeChecker">
+          <span className="store-new">New</span> at {this.props.game[0].storeLocation} (Check Other Stores)
+        </div>
+        <div className="freeship">
+          FREE NO HURRY SHIPPING $35+
+        </div>
+      </>
     )
   }
 }
