@@ -68,7 +68,7 @@ class GameReview extends React.Component {
   render() {
     return (
       <div className="gameReview">
-        <div className="reviewStars">{this.scorePicker()} (PLACEHOLDER STARS)</div>
+        <div className="reviewStars">{this.scorePicker()}</div>
         <div className="reviewScore">{this.props.game[0].reviewScore}.0 ({this.props.game[0].reviewCount})</div>
         <div className="writeReview">Write a review</div>
       </div>
