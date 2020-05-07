@@ -3,6 +3,8 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import PickUp from '../components/PickUp.jsx';
 
+Enzyme.configure({ adapter: new Adapter() })
+
 describe('PickUp', () => {
   it('should be true', () => {
     const foo = true;

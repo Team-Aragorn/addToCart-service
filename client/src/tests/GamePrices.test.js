@@ -3,6 +3,8 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import GamePrices from '../components/GamePrices.jsx';
 
+Enzyme.configure({ adapter: new Adapter() })
+
 describe('GamePrices', () => {
   it('should be true', () => {
     const foo = true;
