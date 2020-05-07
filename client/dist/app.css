@@ -1,8 +1,8 @@
 #app {
   border:solid red 5px;
   max-width: 600px;
-  max-height: 800px;
-  height: 700px;
+  max-height: 525px;
+  height: 525px;
   font-family: sans-serif;
 
 }
@@ -77,7 +77,7 @@
   /* border:solid rgb(151, 31, 31) 2px; */
   width: 200px;
   text-align: center;
-  padding-top: 3.5vh;
+  padding-top: 3vh;
   border: solid lightgray 2px;
   background-color:whitesmoke;
   font-weight: 600;
@@ -87,13 +87,14 @@
 .new {
   font-weight: 600;
   font-size: .9rem;
+  padding-bottom: 5px;
 }
 
 .usedPrice {
   /* border:solid rgb(138, 0, 0) 2px; */
   width: 200px;
   text-align: center;
-  padding-top: 3.5vh;
+  padding-top: 3vh;
   border: solid lightgray 2px;
   background-color:whitesmoke;
   font-weight: 600;
@@ -104,13 +105,14 @@
 .used {
   font-weight: 600;
   font-size: .9rem;
+  padding-bottom: 5px;
 }
 
 .digitalPrice {
   /* border:solid rgb(255, 117, 83) 2px; */
   width: 200px;
   text-align: center;
-  padding-top: 3.5vh;
+  padding-top: 3vh;
   border: solid lightgray 2px;
   background-color:whitesmoke;
   font-weight: 600;
@@ -121,6 +123,7 @@
 .digital {
   font-weight: 600;
   font-size: .9rem;
+  padding-bottom: 5px;
 }
 
 .pickUp {
