@@ -6,9 +6,9 @@ import InStockAndShippingTime from '../components/InStockAndShippingTime.jsx';
 Enzyme.configure({ adapter: new Adapter() })
 
 describe('InStockAndShippingTime', () => {
-  it('reviewScore should have a number value between 0 and 5', () => {
-    const wrapper = shallow(<InStockAndShippingTime />);
-    const value = wrapper.find('inStock')
-    expect(value.text()).toBe('IN STOCK' || 'OUT OF STOCK')
-  })
+  it('Item should render IN STOCK or OUT OF STOCK', () => {
+    const wrapper = shallow(<InStockAndShippingTime game={[{inStock: true}]} />);
+    const value = wrapper.find('.inStock');
+    expect(value.text()).toBe('IN STOCK' || 'OUT OF STOCK');
+  });
 });
