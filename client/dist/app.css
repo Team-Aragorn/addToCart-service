@@ -1,10 +1,7 @@
 #app {
-  border:solid red 2px;
-  max-width: 600px;
-  max-height: 550px;
-  height: 550px;
+  border:solid red 1px;
+  max-width: 492px;
   font-family: sans-serif;
-
 }
 
 .titleANDrating {
@@ -48,7 +45,7 @@
   /* border:solid lightgreen 2px; */
   padding: 5px;
   padding-left: 10px;
-
+  color: rgb(218, 41, 28)
 }
 
 .reviewScore {
@@ -75,7 +72,7 @@
 
 .newPrice {
   /* border:solid rgb(151, 31, 31) 2px; */
-  width: 200px;
+  width: 160px;
   border: solid lightgray 2px;
   background-color:whitesmoke;
   font-weight: 600;
@@ -98,7 +95,7 @@
 
 .usedPrice {
   /* border:solid rgb(138, 0, 0) 2px; */
-  width: 200px;
+  width: 160px;
   border: solid lightgray 2px;
   background-color:whitesmoke;
   font-weight: 600;
@@ -122,7 +119,7 @@
 
 .digitalPrice {
   /* border:solid rgb(255, 117, 83) 2px; */
-  width: 200px;
+  width: 160px;
   padding-top: 3vh;
   border: solid lightgray 2px;
   background-color:whitesmoke;
@@ -130,6 +127,8 @@
   font-size: 1.1rem;
 
 }
+
+/* .active, .digitalPrice */
 
 .digital {
   font-weight: 600;
@@ -145,7 +144,6 @@
 }
 
 .mapMarker {
-  color: red;
   right: 1px;
   float:right;
   padding-top: 5px;
@@ -181,6 +179,11 @@
   padding-left: 35px;
 }
 
+.checkOthers {
+  font-size: .9rem;
+  padding-left: 35px;
+}
+
 .freeship {
   font-weight: 600;
   font-size: .9rem;
@@ -208,7 +211,7 @@
 
 #plan-select {
   height: 50px;
-  width: 400px;
+  width: 350px;
 }
 
 .planDetails {
@@ -225,7 +228,7 @@
 .addToCart > button {
   width: 100%;
   height: 45px;
-  background-color: rgb(218, 54, 44);
+  background-color: rgb(218, 41, 28);
   color: white;
   font-weight: 600;
   border-radius: 10px;
@@ -254,7 +257,8 @@
   padding: 5px;
   padding-left: 4%;
   font-size: .9rem;
-
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .wishlistAndTradeValue {
