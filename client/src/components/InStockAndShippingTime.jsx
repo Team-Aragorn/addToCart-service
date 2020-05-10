@@ -21,7 +21,7 @@ class InStockAndShippingTime extends React.Component {
   render() {
     return (
       <>
-        <div className="inStock" style={ { color: this.state.inStock ? 'green' : 'red' } }>
+        <div className="inStock" style={ { color: this.state.inStock ? 'rgb(38, 151, 113)' : 'red' } }>
           {this.state.inStock ? 'IN STOCK' : 'OUT OF STOCK'}
         </div>
         <ul className="shippingTime">
