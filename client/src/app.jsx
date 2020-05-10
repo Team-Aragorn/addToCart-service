@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar, faMapMarkerAlt, faTruck, faBars, faRetweet } from '@fortawesome/free-solid-svg-icons'
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 
 import TitleAndRating from './components/TitleAndRating.jsx';
 import GameReview from './components/GameReview.jsx';
@@ -10,6 +13,8 @@ import ProtectionPlan from './components/ProtectionPlan.jsx';
 import AddToCart from './components/AddToCart.jsx';
 import InStockAndShippingTime from './components/InStockAndShippingTime.jsx';
 import WishlistAndTradeIn from './components/WishlistAndTradeIn.jsx';
+
+library.add(faStar, farStar, faMapMarkerAlt, faTruck, faBars, faRetweet)
 
 class App extends React.Component {
   constructor(props) {
