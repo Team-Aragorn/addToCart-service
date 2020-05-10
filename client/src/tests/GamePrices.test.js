@@ -5,13 +5,28 @@ import GamePrices from '../components/GamePrices.jsx';
 
 Enzyme.configure({ adapter: new Adapter() })
 
+const gameState = [{
+  0: {
+    newPrice: 60,
+    digitalPrice: 50,
+    usedPrice: 30
+  }
+}]
+
 describe('GamePrices', () => {
-  it('should be true', () => {
-    const foo = true;
-    expect(foo).toBe(true);
-  })
-  it('should be false', () => {
-    const foo = false;
-    expect(foo).toBe(false);
-  })
+  it('newPrice should be a number', () => {
+    const wrapper = shallow(<GamePrices game={gameState} />);
+    const value = wrapper.find('.nPrice');
+    expect(60);
+  });
+  it('usedPrice should be a number', () => {
+    const wrapper = shallow(<GamePrices game={gameState} />);
+    const value = wrapper.find('.uPrice');
+    expect(30);
+  });
+  it('digitalPrice should be a number', () => {
+    const wrapper = shallow(<GamePrices game={gameState} />);
+    const value = wrapper.find('.dPrice');
+    expect(50);
+  });
 });

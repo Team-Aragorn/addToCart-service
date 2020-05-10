@@ -32,9 +32,9 @@ class GamePrices extends React.Component {
   render() {
     return (
       <div className="gamePrices">
-        <div className="newPrice" onClick={this.divClick}><div className="new">NEW</div>${this.props.game[0].newPrice}.00</div>
-        <div className="usedPrice" onClick={this.divClick}><div className="used">PRE-OWNED</div>${this.props.game[0].usedPrice}.00</div>
-        <div className="digitalPrice" onClick={this.divClick}><div className="digital">DIGITAL</div>${this.props.game[0].digitalPrice}.00</div>
+        <div className="newPrice" onClick={this.divClick}><div className="new">NEW</div><div className="nPrice">${this.props.game[0].newPrice}.00</div></div>
+        <div className="usedPrice" onClick={this.divClick}><div className="used">PRE-OWNED</div><div className="uPrice">${this.props.game[0].usedPrice}.00</div></div>
+        <div className="digitalPrice" onClick={this.divClick}><div className="digital">DIGITAL</div><div className="dPrice">${this.props.game[0].digitalPrice}.00</div></div>
       </div>
     )
   }
