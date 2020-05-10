@@ -12,9 +12,15 @@ class PickUp extends React.Component {
   render() {
     return (
       <div className="pickUp">
-        <div className="marker"><FontAwesomeIcon icon="map-marker-alt" /></div>
         <div className="pickUpInfo">
-          <div className="pickup1">FREE PICK UP AT STORE WITH DELIVERY@DOOR</div>
+          <div>
+            <span className="marker">
+              <FontAwesomeIcon icon="map-marker-alt" />
+            </span>
+            <span className="pickup1">
+            FREE PICK UP AT STORE WITH DELIVERY@DOOR
+            </span>
+          </div>
           <div className="pickup2">Order by 6pm local time to pick up TODAY!</div>
         </div>
       </div>

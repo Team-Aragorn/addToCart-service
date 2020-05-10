@@ -19,9 +19,13 @@ class StoreChecker extends React.Component {
           (Check Other Stores)
         </div>
         <div>
-          <div className="truck"><FontAwesomeIcon icon="truck" /></div>
           <div className="freeship">
-            FREE NO HURRY SHIPPING $35+
+            <span className="truck">
+              <FontAwesomeIcon icon="truck" />
+            </span>
+            <span className="freeship-text">
+              FREE NO HURRY SHIPPING $35+
+            </span>
           </div>
         </div>
       </>

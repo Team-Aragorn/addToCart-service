@@ -1,6 +1,6 @@
 #app {
   border:solid red 1px;
-  max-width: 492px;
+  max-width: 490px;
   font-family: sans-serif;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .gameTitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 1000;
   /* border:solid lightblue 2px; */
   float:left;
@@ -23,6 +23,14 @@
   float:right;
   padding: 5px;
 
+
+}
+
+.ageRating > img {
+  height: auto;
+  width: 50px;
+  position: absolute;
+  left: 445px;
 }
 
 .gamePublisher {
@@ -38,28 +46,35 @@
   flex-direction: row;
   padding: 5px;
   padding-left: 10px;
-
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
 }
 
 .reviewStars {
   /* border:solid lightgreen 2px; */
   padding: 5px;
   padding-left: 10px;
-  color: rgb(218, 41, 28)
+  color: rgb(218, 41, 28);
+  cursor:pointer;
+
 }
 
 .reviewScore {
   /* border:solid darkgreen 2px; */
   padding: 5px;
   padding-left: 10px;
-
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
 }
 
 .writeReview {
   /* border:solid yellowgreen 2px; */
   padding: 5px;
   padding-left: 10px;
-
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
 }
 
 .gamePrices {
@@ -68,6 +83,8 @@
   flex-direction: row;
   width: 600px;
   height: 100px;
+  cursor:pointer;
+
 }
 
 .newPrice {
@@ -77,6 +94,10 @@
   background-color:whitesmoke;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+.newPrice:active {
+  background-color: white;
 }
 
 .nPrice{
@@ -101,6 +122,10 @@
   font-weight: 600;
   font-size: 1.1rem;
 
+}
+
+.usedPrice:active {
+  background-color: white;
 }
 
 .uPrice{
@@ -128,7 +153,9 @@
 
 }
 
-/* .active, .digitalPrice */
+.digitalPrice:active {
+  background-color: white;
+}
 
 .digital {
   font-weight: 600;
@@ -156,21 +183,25 @@
 
 }
 
+.marker {
+  font-size: 1.25rem;
+}
+
 .pickup1 {
+  padding-left: 15px;
   color: rgb(38, 151, 113);
   font-weight:600;
 }
 
 .pickup2 {
   font-weight:600;
+  padding-left: 30px;
 
 }
 
 .pickUpInfo {
   /* border:solid pink 2px; */
-  padding-left: 30px;
   font-size: .9rem;
-
 }
 
 .storeChecker {
@@ -188,8 +219,15 @@
   font-weight: 600;
   font-size: .9rem;
   padding-top: 10px;
-  padding-left: 35px;
 
+}
+
+.truck {
+  padding-left: 5px;
+}
+
+.freeship-text {
+  padding-left: 1vw;
 }
 
 .store-new {
@@ -211,44 +249,54 @@
 
 #plan-select {
   height: 50px;
-  width: 350px;
+  width: 375px;
 }
 
 .planDetails {
   /* border:solid gray 2px; */
   float:right;
+  margin-top: 15px;
+  margin-right: 5px;
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
 }
 
 .addToCart {
   /* border:solid red 2px; */
   padding: 5px;
-
+  width: 480px;
 }
 
 .addToCart > button {
-  width: 100%;
-  height: 45px;
-  background-color: rgb(218, 41, 28);
+  width: 480px;
+  height: 50px;
+  background-color: rgb(230, 57, 45);
   color: white;
-  font-weight: 600;
+  font-size: .85rem;
+  font-weight: 800;
   border-radius: 10px;
 
 }
 
 .addToCart > button:hover {
-  width: 100%;
-  height: 45px;
-  background-color: rgb(167, 39, 32);
+  background-color: rgb(197, 49, 38);
   color: white;
-  font-weight: 600;
+  font-size: .85rem;
+  font-weight: 800;
   border-radius: 10px;
 
+}
+
+.addToCart > button:active {
+  background-color: rgb(126, 35, 30);
 }
 
 .inStock {
   /* border:solid blue 2px; */
   padding: 5px;
-  font-weight: 600;
+  font-size: .9rem;
+  font-weight: 800;
 
 }
 
@@ -274,6 +322,8 @@
   float:left;
   font-weight:600;
   font-size: .85rem;
+  cursor:pointer;
+
 }
 
 .seeTradeValue {
@@ -281,6 +331,7 @@
   float: right;
   font-weight:600;
   font-size: .85rem;
+  cursor:pointer;
 
 
 }
