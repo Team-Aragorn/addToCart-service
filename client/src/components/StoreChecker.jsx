@@ -13,7 +13,10 @@ class StoreChecker extends React.Component {
     return (
       <>
         <div className="storeChecker">
-          <span className="store-new">New</span> at {this.props.game[0].storeLocation} (Check Other Stores)
+          <span className="store-new">New</span> at {this.props.game[0].storeLocation}
+        </div>
+        <div className="checkOthers">
+          (Check Other Stores)
         </div>
         <div>
           <div className="truck"><FontAwesomeIcon icon="truck" /></div>

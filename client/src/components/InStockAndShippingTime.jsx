@@ -27,6 +27,7 @@ class InStockAndShippingTime extends React.Component {
         <ul className="shippingTime">
          <li>Usually ships within 24hrs.</li>
         </ul>
+        <div className="theDiv"><hr></hr></div>
       </>
     )
   }
