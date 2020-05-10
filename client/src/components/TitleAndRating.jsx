@@ -30,7 +30,6 @@ class TitleAndRating extends React.Component {
       )
     }
     if(rating == 3) {
-      console.log("This gettin here?")
       return (
         "https://addtocartbucket.s3-us-west-1.amazonaws.com/ESRB/T.png"
       )

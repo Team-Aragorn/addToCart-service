@@ -5,36 +5,56 @@ class GamePrices extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: 'new',
+      newPrice: true,
+      usedPrice: false,
+      digitalPrice: false,
     }
+    this.newHandler = this.newHandler.bind(this);
+    this.usedHandler = this.usedHandler.bind(this);
+    this.digitalHandler = this.digitalHandler.bind(this);
+    this.selectedStyler = this.selectedStyler.bind(this);
   }
 
   // componentDidMount() {
   //   //
   // }
 
-  divClick = (e) => {
-    console.log("e", e)
-    // if(/* */) {
-    //   this.setState({
-    //     /* */
-    //   })
-    // } else if (/* */) {
-    //   this.setState({
-    //     /* */
-    //   })
-    // } else {
-    //   this.setState({
-    //     /* */
-    //   })
-    // }
+  newHandler() {
+    this.setState({
+      newPrice: true,
+      usedPrice: false,
+      digitalPrice: false,
+    })
+  }
+
+  usedHandler() {
+    this.setState({
+      newPrice: false,
+      usedPrice: true,
+      digitalPrice: false,
+    })
+  }
+
+  digitalHandler() {
+    this.setState({
+      newPrice: false,
+      usedPrice: false,
+      digitalPrice: true,
+    })
+  }
+
+  selectedStyler(state) {
+    if(state) {
+      return 'white'
+    } else {
+      return 'whitesmoke'
+    }
   }
 
   render() {
     return (
       <div className="gamePrices">
-
-        <div className="newPrice" onClick={this.divClick}>
+        <div className="newPrice" onClick={this.newHandler} style={{backgroundColor: this.selectedStyler(this.state.newPrice)}}>
           <div className="mapMarker">
             <FontAwesomeIcon icon="map-marker-alt" />
           </div>
@@ -44,9 +64,9 @@ class GamePrices extends React.Component {
           <div className="nPrice">
             ${this.props.game[0].newPrice}.00
           </div>
-        </div>
 
-        <div className="usedPrice" onClick={this.divClick}>
+        </div>
+        <div className="usedPrice" onClick={this.usedHandler} style={{backgroundColor: this.selectedStyler(this.state.usedPrice)}}>
           <div className="mapMarker">
             <FontAwesomeIcon icon="map-marker-alt" />
           </div>
@@ -57,8 +77,7 @@ class GamePrices extends React.Component {
             ${this.props.game[0].usedPrice}.00
           </div>
         </div>
-
-        <div className="digitalPrice" onClick={this.divClick}>
+        <div className="digitalPrice" onClick={this.digitalHandler} style={{backgroundColor: this.selectedStyler(this.state.digitalPrice)}}>
           <div className="digital">
             DIGITAL
           </div>

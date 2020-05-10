@@ -90,8 +90,8 @@
 .newPrice {
   /* border:solid rgb(151, 31, 31) 2px; */
   width: 160px;
-  border: solid lightgray 2px;
-  background-color:whitesmoke;
+  border: solid lightgray 1px;
+  background-color:snow;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -117,8 +117,8 @@
 .usedPrice {
   /* border:solid rgb(138, 0, 0) 2px; */
   width: 160px;
-  border: solid lightgray 2px;
-  background-color:whitesmoke;
+  border: solid lightgray 1px;
+  background-color:snow;
   font-weight: 600;
   font-size: 1.1rem;
 
@@ -146,8 +146,8 @@
   /* border:solid rgb(255, 117, 83) 2px; */
   width: 160px;
   padding-top: 3vh;
-  border: solid lightgray 2px;
-  background-color:whitesmoke;
+  border: solid lightgray 1px;
+  background-color:snow;
   font-weight: 600;
   font-size: 1.1rem;
 
