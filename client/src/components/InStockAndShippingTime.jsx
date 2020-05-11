@@ -10,8 +10,6 @@ class InStockAndShippingTime extends React.Component {
 
   componentDidMount() {
     if(this.props.game[0].inStock) {
-      console.log("HELLO YES IN STOCK HAPPY!");
-
       this.setState({
         inStock: true,
       })

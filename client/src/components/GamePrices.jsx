@@ -45,16 +45,21 @@ class GamePrices extends React.Component {
 
   selectedStyler(state) {
     if(state) {
-      return 'white'
+      return {
+        backgroundColor: 'white',
+        borderBottom: 'rgb(218, 41, 28) solid 4px'
+      }
     } else {
-      return 'whitesmoke'
+      return {
+        backgroundColor: 'whitesmoke'
+      }
     }
   }
 
   render() {
     return (
       <div className="gamePrices">
-        <div className="newPrice" onClick={this.newHandler} style={{backgroundColor: this.selectedStyler(this.state.newPrice)}}>
+        <div className="newPrice" onClick={this.newHandler} style={this.selectedStyler(this.state.newPrice)}>
           <div className="mapMarker">
             <FontAwesomeIcon icon="map-marker-alt" />
           </div>
@@ -66,7 +71,7 @@ class GamePrices extends React.Component {
           </div>
 
         </div>
-        <div className="usedPrice" onClick={this.usedHandler} style={{backgroundColor: this.selectedStyler(this.state.usedPrice)}}>
+        <div className="usedPrice" onClick={this.usedHandler} style={this.selectedStyler(this.state.usedPrice)}>
           <div className="mapMarker">
             <FontAwesomeIcon icon="map-marker-alt" />
           </div>
@@ -77,7 +82,7 @@ class GamePrices extends React.Component {
             ${this.props.game[0].usedPrice}.00
           </div>
         </div>
-        <div className="digitalPrice" onClick={this.digitalHandler} style={{backgroundColor: this.selectedStyler(this.state.digitalPrice)}}>
+        <div className="digitalPrice" onClick={this.digitalHandler} style={this.selectedStyler(this.state.digitalPrice)}>
           <div className="digital">
             DIGITAL
           </div>
