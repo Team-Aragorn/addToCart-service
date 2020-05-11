@@ -1,0 +1,338 @@
+#app {
+  border:solid red 1px;
+  max-width: 490px;
+  font-family: sans-serif;
+}
+
+.titleANDrating {
+  /* border:solid blue 2px; */
+  display: flow-root;
+  flex-direction: row;
+}
+
+.gameTitle {
+  font-size: 1.5rem;
+  font-weight: 1000;
+  /* border:solid lightblue 2px; */
+  float:left;
+  padding: 5px;
+}
+
+.ageRating {
+  /* border:solid darkblue 2px; */
+  float:right;
+  padding: 5px;
+
+
+}
+
+.ageRating > img {
+  height: auto;
+  width: 50px;
+  position: absolute;
+  left: 445px;
+}
+
+.gamePublisher {
+  /* border:solid navy 2px; */
+  padding-left: 5px;
+  padding-bottom: 5px;
+
+}
+
+.gameReview {
+  /* border:solid green 2px; */
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  padding-left: 10px;
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+}
+
+.reviewStars {
+  /* border:solid lightgreen 2px; */
+  padding: 5px;
+  padding-left: 10px;
+  color: rgb(218, 41, 28);
+  cursor:pointer;
+
+}
+
+.reviewScore {
+  /* border:solid darkgreen 2px; */
+  padding: 5px;
+  padding-left: 10px;
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
+}
+
+.writeReview {
+  /* border:solid yellowgreen 2px; */
+  padding: 5px;
+  padding-left: 10px;
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
+}
+
+.gamePrices {
+  /* border:solid red 2px; */
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 100px;
+  cursor:pointer;
+
+}
+
+.newPrice {
+  /* border:solid rgb(151, 31, 31) 2px; */
+  width: 160px;
+  border: solid lightgray 1px;
+  background-color:snow;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.newPrice:active {
+  background-color: white;
+}
+
+.nPrice{
+  text-align: center;
+
+}
+
+.new {
+  font-weight: 600;
+  font-size: .9rem;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-top: 3vh;
+
+}
+
+.usedPrice {
+  /* border:solid rgb(138, 0, 0) 2px; */
+  width: 160px;
+  border: solid lightgray 1px;
+  background-color:snow;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+}
+
+.usedPrice:active {
+  background-color: white;
+}
+
+.uPrice{
+  text-align: center;
+
+}
+
+.used {
+  font-weight: 600;
+  font-size: .9rem;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-top: 3vh;
+
+}
+
+.digitalPrice {
+  /* border:solid rgb(255, 117, 83) 2px; */
+  width: 160px;
+  padding-top: 3vh;
+  border: solid lightgray 1px;
+  background-color:snow;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+}
+
+.digitalPrice:active {
+  background-color: white;
+}
+
+.digital {
+  font-weight: 600;
+  font-size: .9rem;
+  padding-bottom: 5px;
+  text-align: center;
+
+}
+
+.dPrice{
+  text-align: center;
+
+}
+
+.mapMarker {
+  right: 1px;
+  float:right;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.pickUp {
+  /* border:solid purple 2px; */
+  padding: 5px;
+
+}
+
+.marker {
+  font-size: 1.25rem;
+}
+
+.pickup1 {
+  padding-left: 15px;
+  color: rgb(38, 151, 113);
+  font-weight:600;
+}
+
+.pickup2 {
+  font-weight:600;
+  padding-left: 30px;
+
+}
+
+.pickUpInfo {
+  /* border:solid pink 2px; */
+  font-size: .9rem;
+}
+
+.storeChecker {
+  /* border:solid orange 2px; */
+  font-size: .9rem;
+  padding-left: 35px;
+}
+
+.checkOthers {
+  font-size: .9rem;
+  padding-left: 35px;
+}
+
+.freeship {
+  font-weight: 600;
+  font-size: .9rem;
+  padding-top: 10px;
+
+}
+
+.truck {
+  padding-left: 5px;
+}
+
+.freeship-text {
+  padding-left: 1vw;
+}
+
+.store-new {
+  font-weight:600;
+}
+
+.protectionPlan {
+  /* border:solid burlywood 2px; */
+  display: flow-root;
+  flex-direction: row;
+  padding: 5px;
+
+}
+
+.protectionDropdown {
+  /* border:solid brown 2px; */
+  float:left;
+}
+
+#plan-select {
+  height: 50px;
+  width: 375px;
+}
+
+.planDetails {
+  /* border:solid gray 2px; */
+  float:right;
+  margin-top: 15px;
+  margin-right: 5px;
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
+}
+
+.addToCart {
+  /* border:solid red 2px; */
+  padding: 5px;
+  width: 480px;
+}
+
+.addToCart > button {
+  width: 480px;
+  height: 50px;
+  background-color: rgb(230, 57, 45);
+  color: white;
+  font-size: .85rem;
+  font-weight: 800;
+  border-radius: 10px;
+
+}
+
+.addToCart > button:hover {
+  background-color: rgb(197, 49, 38);
+  color: white;
+  font-size: .85rem;
+  font-weight: 800;
+  border-radius: 10px;
+
+}
+
+.addToCart > button:active {
+  background-color: rgb(126, 35, 30);
+}
+
+.inStock {
+  /* border:solid blue 2px; */
+  padding: 5px;
+  font-size: .9rem;
+  font-weight: 800;
+
+}
+
+.shippingTime {
+  /* border:solid green 2px; */
+  padding: 5px;
+  padding-left: 4%;
+  font-size: .9rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wishlistAndTradeValue {
+  /* border:solid yellow 2px; */
+  display: flow-root;
+  flex-direction: row;
+  padding: 5px;
+
+}
+
+.addToWishlist {
+  /* border:solid rgb(255, 117, 83) 2px; */
+  float:left;
+  font-weight:600;
+  font-size: .85rem;
+  cursor:pointer;
+
+}
+
+.seeTradeValue {
+  /* border:solid goldenrod 2px; */
+  float: right;
+  font-weight:600;
+  font-size: .85rem;
+  cursor:pointer;
+
+
+}
+

@@ -37,3 +37,17 @@ npm install -g webpack
 npm install
 ```
 
+You will also need to install and setup mongodb for this app.
+
+You will also need to seed your database, to seed the DB open a terminal in the addToCart-service directory and run the following command:
+- node db/seed.js
+After you get a message saying it has connect to MongoDB press CTRL + C. Your data should be in the DB now.
+
+
+## HOW TO START
+cd to addToCart-service directory
+in multiple terminals run the following commands, one command per terminal:
+- npm start
+- npm run-script build
+- (sudo) mongo or (sudo) mongod
+

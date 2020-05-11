@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class PickUp extends React.Component {
   constructor(props) {
@@ -12,8 +13,15 @@ class PickUp extends React.Component {
     return (
       <div className="pickUp">
         <div className="pickUpInfo">
-          <div>FREE PICK UP AT STORE WITH DELIVERY@DOOR</div>
-          <div>Order by 6pm local time to pick up TODAY!</div>
+          <div>
+            <span className="marker">
+              <FontAwesomeIcon icon="map-marker-alt" />
+            </span>
+            <span className="pickup1">
+            FREE PICK UP AT STORE WITH DELIVERY@DOOR
+            </span>
+          </div>
+          <div className="pickup2">Order by 6pm local time to pick up TODAY!</div>
         </div>
       </div>
     )

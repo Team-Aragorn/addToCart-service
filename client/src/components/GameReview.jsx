@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class GameReview extends React.Component {
   constructor(props) {
@@ -26,7 +27,11 @@ class GameReview extends React.Component {
     if(this.state.rating === 1) {
       return (
         <>
-          *
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon={['far', 'star']} />
+          <FontAwesomeIcon icon={['far', 'star']} />
+          <FontAwesomeIcon icon={['far', 'star']} />
+          <FontAwesomeIcon icon={['far', 'star']} />
         </>
       );
     }
@@ -34,7 +39,11 @@ class GameReview extends React.Component {
     if(this.state.rating === 2) {
       return (
         <>
-          **
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon={['far', 'star']} />
+          <FontAwesomeIcon icon={['far', 'star']} />
+          <FontAwesomeIcon icon={['far', 'star']} />
         </>
       );
     }
@@ -42,7 +51,11 @@ class GameReview extends React.Component {
     if(this.state.rating === 3) {
       return (
         <>
-          ***
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon={['far', 'star']} />
+          <FontAwesomeIcon icon={['far', 'star']} />
         </>
       );
     }
@@ -50,7 +63,11 @@ class GameReview extends React.Component {
     if(this.state.rating === 4) {
       return (
         <>
-          ****
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon={['far', 'star']} />
         </>
       );
     }
@@ -58,7 +75,11 @@ class GameReview extends React.Component {
     if(this.state.rating === 5) {
       return (
         <>
-          *****
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
+          <FontAwesomeIcon icon="star" />
         </>
       );
     }
@@ -68,7 +89,7 @@ class GameReview extends React.Component {
   render() {
     return (
       <div className="gameReview">
-        <div className="reviewStars">{this.scorePicker()} (PLACEHOLDER STARS)</div>
+        <div className="reviewStars">{this.scorePicker()}</div>
         <div className="reviewScore">{this.props.game[0].reviewScore}.0 ({this.props.game[0].reviewCount})</div>
         <div className="writeReview">Write a review</div>
       </div>

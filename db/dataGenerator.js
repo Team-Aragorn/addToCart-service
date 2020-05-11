@@ -15,7 +15,7 @@ const fillData = () => {
       newPrice: 60,
       usedPrice: Math.ceil(Math.random() * 55),
       digitalPrice: Math.floor(Math.random() * (60 - 45 + 1) + 45),
-      storeLocation: faker.fake('{{address.streetAddress}} {{address.streetName}} {{address.city}}, {{address.state}} {{address.zipCode}} '),
+      storeLocation: faker.fake('{{address.streetAddress}} {{address.streetName}} {{address.city}}, {{address.state}}'),
       inStock: faker.random.boolean(),
     };
     data.push(gameObj);
