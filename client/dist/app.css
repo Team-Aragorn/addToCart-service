@@ -213,6 +213,9 @@
 .checkOthers {
   font-size: .9rem;
   padding-left: 35px;
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline;
 }
 
 .freeship {
