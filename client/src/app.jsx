@@ -25,11 +25,11 @@ class App extends React.Component {
       loading: true,
     }
     this.getGame = this.getGame.bind(this);
-    this.url = 'http://localhost:3001/game/'
+    this.url = 'http://localhost:3001/api/'
   }
 
   componentDidMount() {
-    const gid = window.location.pathname.match(/\/games\/(\d+)\//);
+    const gid = window.location.pathname.match(/\/cartgames\/(\d+)\//);
     console.log("GID", gid)
     this.setState({
       gameid: gid[1],
@@ -74,4 +74,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('addToCart'));

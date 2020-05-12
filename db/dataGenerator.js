@@ -3,7 +3,7 @@ const faker = require('faker');
 const data = [];
 
 const fillData = () => {
-  for (var i = 1; i <= 100; i++) {
+  for (var i = 1; i <= 100; i+=1) {
     const gameObj = {
       id: i,
       gameId: i,
