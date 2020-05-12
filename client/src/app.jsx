@@ -16,7 +16,7 @@ import WishlistAndTradeIn from './components/WishlistAndTradeIn.jsx';
 
 library.add(faStar, farStar, faMapMarkerAlt, faTruck, faBars, faRetweet)
 
-class App extends React.Component {
+class AddToCartApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,4 +74,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('addToCart'));
+ReactDOM.render(<AddToCartApp />, document.getElementById('addToCart'));
