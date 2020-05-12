@@ -29,7 +29,7 @@ class AddToCartApp extends React.Component {
   }
 
   componentDidMount() {
-    const gid = window.location.pathname.match(/\/cartgames\/(\d+)\//);
+    const gid = window.location.pathname.match(/\/games\/(\d+)\//);
     console.log("GID", gid)
     this.setState({
       gameid: gid[1],
