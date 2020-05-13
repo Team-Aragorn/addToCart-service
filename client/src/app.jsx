@@ -25,7 +25,7 @@ class AddToCartApp extends React.Component {
       loading: true,
     }
     this.getGame = this.getGame.bind(this);
-    this.url = 'http://localhost:3001/api/'
+    this.url = 'http://localhost:3001/cartapi/'
   }
 
   componentDidMount() {
