@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/games/:id', express.static(__dirname + '/../client/dist'));
 
 //TO-DO: api get router
-app.get('/api/:id', (req, res) => {
+app.get('/cartapi/:id', (req, res) => {
   const id = Number(path.basename(req.url));
   db.getGame(id, (err, result) => {
     if(err) {
