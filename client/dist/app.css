@@ -1,5 +1,5 @@
 #app {
-  max-width: 490px;
+  max-width: 450px;
   font-family: sans-serif;
 }
 
@@ -21,15 +21,13 @@
   /* border:solid darkblue 2px; */
   float:right;
   padding: 5px;
-
-
+  margin-bottom: -50px;
 }
 
 .ageRating > img {
   height: auto;
   width: 50px;
-  position: absolute;
-  left: 445px;
+
 }
 
 .gamePublisher {
@@ -80,7 +78,7 @@
   /* border:solid red 2px; */
   display: flex;
   flex-direction: row;
-  width: 600px;
+  width: 450px;
   height: 100px;
   cursor:pointer;
 
@@ -88,7 +86,7 @@
 
 .newPrice {
   /* border:solid rgb(151, 31, 31) 2px; */
-  width: 160px;
+  width: 150px;
   border: solid lightgray 1px;
   background-color:snow;
   font-weight: 600;
@@ -115,7 +113,7 @@
 
 .usedPrice {
   /* border:solid rgb(138, 0, 0) 2px; */
-  width: 160px;
+  width: 150px;
   border: solid lightgray 1px;
   background-color:snow;
   font-weight: 600;
@@ -143,7 +141,7 @@
 
 .digitalPrice {
   /* border:solid rgb(255, 117, 83) 2px; */
-  width: 160px;
+  width: 150px;
   padding-top: 3vh;
   border: solid lightgray 1px;
   background-color:snow;
@@ -251,7 +249,7 @@
 
 #plan-select {
   height: 50px;
-  width: 375px;
+  width: 335px;
 }
 
 .planDetails {
@@ -267,11 +265,11 @@
 .addToCart {
   /* border:solid red 2px; */
   padding: 5px;
-  width: 480px;
+  width: 445px;
 }
 
 .addToCart > button {
-  width: 480px;
+  width: 445px;
   height: 50px;
   background-color: rgb(230, 57, 45);
   color: white;

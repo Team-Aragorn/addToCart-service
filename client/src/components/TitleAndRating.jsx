@@ -55,11 +55,11 @@ class TitleAndRating extends React.Component {
     return (
       <>
         <div className="titleANDrating">
+        <div className="ageRating">
+          <img src={this.esrb(this.props.game[0].ageRating)} />
+        </div>
           <div className="gameTitle">
             {this.props.game[0].title}
-          </div>
-          <div className="ageRating">
-              <img src={this.esrb(this.props.game[0].ageRating)} />
           </div>
         </div>
         <div className="gamePublisher">
