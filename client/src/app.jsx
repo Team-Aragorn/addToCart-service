@@ -14,6 +14,8 @@ import AddToCart from './components/AddToCart.jsx';
 import InStockAndShippingTime from './components/InStockAndShippingTime.jsx';
 import WishlistAndTradeIn from './components/WishlistAndTradeIn.jsx';
 
+import styles from './app.css';
+
 library.add(faStar, farStar, faMapMarkerAlt, faTruck, faBars, faRetweet)
 
 class AddToCartApp extends React.Component {
@@ -58,7 +60,7 @@ class AddToCartApp extends React.Component {
       return null;
     }
     return (
-      <>
+      <div className={styles.wrapper}>
         <TitleAndRating game={this.state.game} />
         <GameReview game={this.state.game} />
         <GamePrices game={this.state.game} />
@@ -68,7 +70,7 @@ class AddToCartApp extends React.Component {
         <AddToCart />
         <InStockAndShippingTime game={this.state.game} />
         <WishlistAndTradeIn />
-      </>
+      </div>
     )
   }
 }

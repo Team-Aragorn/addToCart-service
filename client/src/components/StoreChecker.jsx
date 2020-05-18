@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import styles from '../app.css';
+
 class StoreChecker extends React.Component {
   constructor(props) {
     super(props);
@@ -12,18 +14,18 @@ class StoreChecker extends React.Component {
   render() {
     return (
       <>
-        <div className="storeChecker">
-          <span className="store-new">New</span> at {this.props.game[0].storeLocation}
+        <div className={styles.storeChecker}>
+          <span className={styles.storenew}>New</span> at {this.props.game[0].storeLocation}
         </div>
-        <div className="checkOthers">
+        <div className={styles.checkOthers}>
           (Check Other Stores)
         </div>
         <div>
-          <div className="freeship">
-            <span className="truck">
+          <div className={styles.freeship}>
+            <span className={styles.truck}>
               <FontAwesomeIcon icon="truck" />
             </span>
-            <span className="freeship-text">
+            <span className={styles.freeshiptext}>
               FREE NO HURRY SHIPPING $35+
             </span>
           </div>

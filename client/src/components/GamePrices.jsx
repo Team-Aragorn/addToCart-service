@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import styles from '../app.css';
+
 class GamePrices extends React.Component {
   constructor(props) {
     super(props);
@@ -58,35 +60,35 @@ class GamePrices extends React.Component {
 
   render() {
     return (
-      <div className="gamePrices">
-        <div className="newPrice" onClick={this.newHandler} style={this.selectedStyler(this.state.newPrice)}>
-          <div className="mapMarker">
+      <div className={styles.gamePrices}>
+        <div className={styles.newPrice} onClick={this.newHandler} style={this.selectedStyler(this.state.newPrice)}>
+          <div className={styles.mapMarker}>
             <FontAwesomeIcon icon="map-marker-alt" />
           </div>
-          <div className="new">
+          <div className={styles.new}>
             NEW
           </div>
-          <div className="nPrice">
+          <div className={styles.nPrice}>
             ${this.props.game[0].newPrice}.00
           </div>
 
         </div>
-        <div className="usedPrice" onClick={this.usedHandler} style={this.selectedStyler(this.state.usedPrice)}>
-          <div className="mapMarker">
+        <div className={styles.usedPrice} onClick={this.usedHandler} style={this.selectedStyler(this.state.usedPrice)}>
+          <div className={styles.mapMarker}>
             <FontAwesomeIcon icon="map-marker-alt" />
           </div>
-          <div className="used">
+          <div className={styles.used}>
             PRE-OWNED
           </div>
-          <div className="uPrice">
+          <div className={styles.uPrice}>
             ${this.props.game[0].usedPrice}.00
           </div>
         </div>
-        <div className="digitalPrice" onClick={this.digitalHandler} style={this.selectedStyler(this.state.digitalPrice)}>
-          <div className="digital">
+        <div className={styles.digitalPrice} onClick={this.digitalHandler} style={this.selectedStyler(this.state.digitalPrice)}>
+          <div className={styles.digital}>
             DIGITAL
           </div>
-          <div className="dPrice">
+          <div className={styles.dPrice}>
             ${this.props.game[0].digitalPrice}.00
           </div>
         </div>

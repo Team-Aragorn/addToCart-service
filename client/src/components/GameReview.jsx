@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import styles from '../app.css';
+
 class GameReview extends React.Component {
   constructor(props) {
     super(props);
@@ -88,10 +90,10 @@ class GameReview extends React.Component {
 
   render() {
     return (
-      <div className="gameReview">
-        <div className="reviewStars">{this.scorePicker()}</div>
-        <div className="reviewScore">{this.props.game[0].reviewScore}.0 ({this.props.game[0].reviewCount})</div>
-        <div className="writeReview">Write a review</div>
+      <div className={styles.gameReview}>
+        <div className={styles.reviewStars}>{this.scorePicker()}</div>
+        <div className={styles.reviewScore}>{this.props.game[0].reviewScore}.0 ({this.props.game[0].reviewCount})</div>
+        <div className={styles.writeReview}>Write a review</div>
       </div>
     );
   }

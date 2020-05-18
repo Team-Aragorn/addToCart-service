@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../app.css';
+
 class TitleAndRating extends React.Component {
   constructor(props) {
     super(props);
@@ -54,15 +56,15 @@ class TitleAndRating extends React.Component {
   render() {
     return (
       <>
-        <div className="titleANDrating">
-        <div className="ageRating">
+        <div className={styles.titleANDrating}>
+        <div className={styles.ageRating}>
           <img src={this.esrb(this.props.game[0].ageRating)} />
         </div>
-          <div className="gameTitle">
+          <div className={styles.gameTitle}>
             {this.props.game[0].title}
           </div>
         </div>
-        <div className="gamePublisher">
+        <div className={styles.gamePublisher}>
           {this.props.game[0].publisher}
         </div>
       </>

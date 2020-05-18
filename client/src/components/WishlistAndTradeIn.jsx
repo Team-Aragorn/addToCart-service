@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import styles from '../app.css';
+
 class WishlistAndTradeIn extends React.Component {
   constructor(props) {
     super(props);
@@ -11,11 +13,11 @@ class WishlistAndTradeIn extends React.Component {
 
   render() {
     return (
-      <div className="wishlistAndTradeValue">
-        <div className="addToWishlist">
+      <div className={styles.wishlistAndTradeValue}>
+        <div className={styles.addToWishlist}>
         <FontAwesomeIcon icon="bars" />ADD TO WISHLIST
         </div>
-        <div className="seeTradeValue">
+        <div className={styles.seeTradeValue}>
         <FontAwesomeIcon icon="retweet" />SEE TRADE VALUE
         </div>
       </div>

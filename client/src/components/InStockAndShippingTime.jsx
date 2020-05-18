@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../app.css';
+
 class InStockAndShippingTime extends React.Component {
   constructor(props) {
     super(props);
@@ -19,13 +21,13 @@ class InStockAndShippingTime extends React.Component {
   render() {
     return (
       <>
-        <div className="inStock" style={ { color: this.state.inStock ? 'rgb(38, 151, 113)' : 'red' } }>
+        <div className={styles.inStock} style={ { color: this.state.inStock ? 'rgb(38, 151, 113)' : 'red' } }>
           {this.state.inStock ? 'IN STOCK' : 'OUT OF STOCK'}
         </div>
-        <ul className="shippingTime">
+        <ul className={styles.shippingTime}>
          <li>Usually ships within 24hrs.</li>
         </ul>
-        <div className="theDiv"><hr></hr></div>
+        <div className={styles.theDiv}><hr></hr></div>
       </>
     )
   }
