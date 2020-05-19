@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "nodemon server/index.js",
-    "build": "webpack -d --watch",
+    "build-d": "webpack --config webpack.dev.js",
+    "build-p": "webpack --config webpack.prod.js",
     "seed": "node db/seed.js",
     "test": "jest --watchAll"
   },
@@ -29,9 +30,9 @@
     "path": "^0.12.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^5.1.0",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.8.3",
