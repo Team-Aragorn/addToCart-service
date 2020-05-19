@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../app.css';
+
 class AddToCart extends React.Component {
   constructor(props) {
     super(props);
@@ -10,8 +12,8 @@ class AddToCart extends React.Component {
 
   render() {
     return (
-      <div className="addToCart">
-        <button>ADD TO CART</button>
+      <div className={styles.addToCartDiv}>
+        <button className={styles.addToCartButton}>ADD TO CART</button>
       </div>
     )
   }

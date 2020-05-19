@@ -1,4 +1,4 @@
-#app {
+.wrapper {
   max-width: 450px;
   font-family: sans-serif;
 }
@@ -226,11 +226,11 @@
   padding-left: 5px;
 }
 
-.freeship-text {
+.freeshiptext {
   padding-left: 1vw;
 }
 
-.store-new {
+.storenew {
   font-weight:600;
 }
 
@@ -247,7 +247,7 @@
   float:left;
 }
 
-#plan-select {
+.planselect {
   height: 50px;
   width: 335px;
 }
@@ -262,13 +262,13 @@
   text-decoration:underline;
 }
 
-.addToCart {
+.addToCartDiv {
   /* border:solid red 2px; */
   padding: 5px;
   width: 445px;
 }
 
-.addToCart > button {
+.addToCartButton {
   width: 445px;
   height: 50px;
   background-color: rgb(230, 57, 45);
@@ -276,10 +276,9 @@
   font-size: .85rem;
   font-weight: 800;
   border-radius: 10px;
-
 }
 
-.addToCart > button:hover {
+.addToCartButton:hover {
   background-color: rgb(197, 49, 38);
   color: white;
   font-size: .85rem;
@@ -288,7 +287,7 @@
 
 }
 
-.addToCart > button:active {
+.addToCartButton:active {
   background-color: rgb(126, 35, 30);
 }
 
